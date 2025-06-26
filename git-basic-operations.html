@@ -1,0 +1,235 @@
+<div class="article-intro" id="content">
+			
+			<h1>Git 基本操作</h1>
+<p>
+Git 的工作就是创建和保存你项目的快照及与之后的快照进行对比。</p><p>本章将对有关创建与提交你的项目快照的命令作介绍。</p>
+<p>Git 常用的是以下 6 个命令：<strong>git clone</strong>、<strong>git push</strong>、<strong>git add</strong> 、<strong>git commit</strong>、<strong>git checkout</strong>、<strong>git pull</strong>，后面我们会详细介绍。</p>
+<p><img decoding="async" src="https://www.runoob.com/wp-content/uploads/2015/02/git-command.jpg"></p>
+<p><strong>说明：</strong></p>
+<ul>
+<li>workspace：工作区</li>
+<li>staging area：暂存区/缓存区</li>
+<li>local repository：版本库或本地仓库</li>
+<li>remote repository：远程仓库</li>
+</ul>
+<p>一个简单的操作步骤：</p>
+<pre class="prettyprint prettyprinted" style=""><span class="pln">$ git init    
+$ git add </span><span class="pun">.</span><span class="pln">    
+$ git commit  </span><button class="copy-code-button" type="button" data-clipboard-text="$ git init    
+$ git add .    
+$ git commit  " style="display: none;"></button></pre>
+<ul><li>
+git init - 初始化仓库。
+</li><li>
+git add .  -  添加文件到暂存区。
+</li><li>
+git commit  -  将暂存区内容添加到仓库中。
+</li></ul>
+
+
+<h3>创建仓库命令</h3>
+<p>下表列出了 git 创建仓库的命令：</p>
+<table class="reference">
+<tbody><tr><th>命令</th>
+<th>说明</th>
+</tr>
+<tr>
+<td><code><a href="/git/git-init.html" rel="noopener noreferrer" target="_blank">git init</a></code></td>
+<td>初始化仓库</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-clone.html" rel="noopener noreferrer" target="_blank">git clone </a></code></td>
+<td>拷贝一份远程仓库，也就是下载一个项目。</td>
+</tr>
+</tbody></table>
+
+
+<hr>
+<h2>提交与修改</h2>
+<p>Git 的工作就是创建和保存你的项目的快照及与之后的快照进行对比。</p>
+<p>下表列出了有关创建与提交你的项目的快照的命令：</p>
+
+<table class="reference">
+<tbody><tr><th>命令</th>
+<th>说明</th>
+</tr>
+<tr>
+<td><code><a href="/git/git-add.html" rel="noopener noreferrer" target="_blank">git add</a></code></td>
+<td>添加文件到暂存区</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-status.html" rel="noopener noreferrer" target="_blank">git status </a></code></td>
+<td>查看仓库当前的状态，显示有变更的文件。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-diff.html" rel="noopener noreferrer" target="_blank">git diff </a></code></td>
+<td>比较文件的不同，即暂存区和工作区的差异。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-difftool.html" rel="noopener noreferrer" target="_blank">git difftool </a></code></td>
+<td>使用外部差异工具查看和比较文件的更改。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-range-diff.html" rel="noopener noreferrer" target="_blank">git range-diff </a></code></td>
+<td>比较两个提交范围之间的差异。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-commit.html" rel="noopener noreferrer" target="_blank">git commit </a></code></td>
+<td>提交暂存区到本地仓库。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-reset.html" rel="noopener noreferrer" target="_blank">git reset </a></code></td>
+<td>回退版本。</td>
+</tr>
+
+<tr>
+<td><code><a href="/git/git-rm.html" rel="noopener noreferrer" target="_blank">git rm </a></code></td>
+<td>将文件从暂存区和工作区中删除。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-mv.html" rel="noopener noreferrer" target="_blank">git mv </a></code></td>
+<td>移动或重命名工作区文件。</td>
+</tr>
+
+<tr>
+<td><code><a href="/git/git-notes.html" rel="noopener noreferrer" target="_blank">git notes </a></code></td>
+<td>添加注释。</td>
+</tr>
+
+<tr>
+<td><code><a href="/git/git-checkout.html" rel="noopener noreferrer" target="_blank">git checkout </a></code></td>
+<td>分支切换。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-switch.html" rel="noopener noreferrer" target="_blank">git switch </a>（Git 2.23 版本引入）</code></td>
+<td>更清晰地切换分支。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-restore.html" rel="noopener noreferrer" target="_blank">git restore </a>（Git 2.23 版本引入）</code></td>
+<td>恢复或撤销文件的更改。</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-show.html" rel="noopener noreferrer" target="_blank">git show </a></code></td>
+<td>显示 Git 对象的详细信息。</td>
+</tr>
+</tbody></table>
+
+<h3>提交日志</h3>
+<table class="reference">
+    <tbody><tr><th>命令</th>
+    <th>说明</th>
+    </tr>
+    <tr>
+    <td><code><a href="/git/git-commit-history.html#git-log" rel="noopener noreferrer" target="_blank">git log</a></code></td>
+    <td>查看历史提交记录</td>
+    </tr>
+
+
+    <tr>
+        <td><code><a href="/git/git-commit-history.html#git-blame" rel="noopener noreferrer" target="_blank">git blame &lt;file&gt;</a>
+        </code></td>
+        <td>以列表形式查看指定文件的历史修改记录</td>
+        </tr>
+  <tr>
+    <td><code><a href="/git/git-shortlog.html" rel="noopener noreferrer" target="_blank">git shortlog </a></code></td>
+    <td>生成简洁的提交日志摘要</td>
+    </tr>
+
+<tr>
+    <td><code><a href="/git/git-describe.html" rel="noopener noreferrer" target="_blank">git describe </a></code></td>
+    <td>生成一个可读的字符串，该字符串基于 Git 的标签系统来描述当前的提交</td>
+    </tr>
+    </tbody></table>
+
+<h3>远程操作</h3>
+<table class="reference">
+<tbody><tr><th>命令</th>
+<th>说明</th>
+</tr>
+<tr>
+<td><code><a href="/git/git-remote.html" rel="noopener noreferrer" target="_blank">git remote</a></code></td>
+<td>远程仓库操作</td>
+</tr>
+<tr>
+<td><code><a href="/git/git-fetch.html" rel="noopener noreferrer" target="_blank">git fetch</a>
+</code></td>
+<td>从远程获取代码库</td>
+</tr>
+<tr>
+    <td><code><a href="/git/git-pull.html" rel="noopener noreferrer" target="_blank">git pull</a>
+    </code></td>
+    <td>下载远程代码并合并</td>
+    </tr>
+    <tr>
+        <td><code><a href="/git/git-push.html" rel="noopener noreferrer" target="_blank">git push</a>
+        </code></td>
+        <td>上传远程代码并合并</td>
+        </tr>
+
+
+  <tr>
+        <td><code><a href="/git/git-submodule.html" rel="noopener noreferrer" target="_blank">git submodule </a>
+        </code></td>
+        <td>管理包含其他 Git 仓库的项目</td>
+        </tr>
+</tbody></table><hr>
+<h2>Git 文件状态</h2>
+<p>Git 的文件状态分为三种：工作目录（Working Directory）、暂存区（Staging Area）、本地仓库（Local Repository）。了解这些概念及其交互方式是掌握 Git 的关键。</p>
+<h3>工作目录（Working Directory）</h3>
+<p>工作目录是你在本地计算机上看到的项目文件。它是你实际操作文件的地方，包括查看、编辑、删除和创建文件。所有对文件的更改首先发生在工作目录中。</p>
+
+<p>在工作目录中的文件可能有以下几种状态：</p><ul>
+<li><strong>未跟踪（Untracked）</strong>：新创建的文件，未被 Git 记录。</li>
+<li><strong>已修改（Modified）</strong>：已被 Git 跟踪的文件发生了更改，但这些更改还没有被提交到 Git 记录中。</li>
+</ul>
+
+<h3>暂存区（Staging Area）</h3>
+<p>暂存区，也称为索引（Index），是一个临时存储区域，用于保存即将提交到本地仓库的更改。你可以选择性地将工作目录中的更改添加到暂存区中，这样你可以一次提交多个文件的更改，而不必提交所有文件的更改。</p>
+<ul>
+<li>使用 <code>git add &lt;filename&gt;</code> 命令将文件从工作目录添加到暂存区。</li>
+<li>使用 <code>git add .</code> 命令将当前目录下的所有更改添加到暂存区。</li>
+</ul>
+
+<pre class="prettyprint prettyprinted" style=""><span class="pln">git add </span><span class="str">&lt;filename&gt;</span><span class="pln">  </span><span class="com"># 添加指定文件到暂存区</span><span class="pln">
+git add </span><span class="pun">.</span><span class="pln">           </span><span class="com"># 添加所有更改到暂存区</span><button class="copy-code-button" type="button" data-clipboard-text="git add &lt;filename&gt;  # 添加指定文件到暂存区
+git add .           # 添加所有更改到暂存区" style="display: none;"></button></pre>
+<h3>本地仓库（Local Repository）</h3>
+<p>本地仓库是一个隐藏在 <code>.git</code> 目录中的数据库，用于存储项目的所有提交历史记录。每次你提交更改时，Git 会将暂存区中的内容保存到本地仓库中。</p>
+
+<p>使用 <code>git commit -m "commit message"</code> 命令将暂存区中的更改提交到本地仓库。</p>
+
+<pre class="prettyprint prettyprinted" style=""><span class="pln">git commit </span><span class="pun">-</span><span class="pln">m </span><span class="str">"commit message"</span><span class="pln">  </span><span class="com"># 提交暂存区的更改到本地仓库</span><button class="copy-code-button" type="button" data-clipboard-text="git commit -m &quot;commit message&quot;  # 提交暂存区的更改到本地仓库"></button></pre>
+<h3>文件状态的转换流程</h3>
+
+<p><strong>未跟踪（Untracked）</strong>：
+新创建的文件最初是未跟踪的。它们存在于工作目录中，但没有被 Git 跟踪。</p>
+<pre class="prettyprint prettyprinted" style=""><span class="pln">touch newfile</span><span class="pun">.</span><span class="pln">txt  </span><span class="com"># 创建一个新文件</span><span class="pln">
+git status         </span><span class="com"># 查看状态，显示 newfile.txt 未跟踪</span><button class="copy-code-button" type="button" data-clipboard-text="touch newfile.txt  # 创建一个新文件
+git status         # 查看状态，显示 newfile.txt 未跟踪" style="display: none;"></button></pre>
+
+<p><strong>已跟踪（Tracked）</strong>：
+通过 <code>git add</code> 命令将未跟踪的文件添加到暂存区后，文件变为已跟踪状态。</p>
+<pre class="prettyprint prettyprinted" style=""><span class="pln">git add newfile</span><span class="pun">.</span><span class="pln">txt  </span><span class="com"># 添加文件到暂存区</span><span class="pln">
+git status           </span><span class="com"># 查看状态，显示 newfile.txt 在暂存区</span><button class="copy-code-button" type="button" data-clipboard-text="git add newfile.txt  # 添加文件到暂存区
+git status           # 查看状态，显示 newfile.txt 在暂存区" style="display: none;"></button></pre>
+
+<p><strong>已修改（Modified）</strong>：
+对已跟踪的文件进行更改后，这些更改会显示为已修改状态，但这些更改还未添加到暂存区。</p>
+<pre class="prettyprint prettyprinted" style=""><span class="pln">echo </span><span class="str">"Hello, World!"</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> newfile</span><span class="pun">.</span><span class="pln">txt  </span><span class="com"># 修改文件</span><span class="pln">
+git status                          </span><span class="com"># 查看状态，显示 newfile.txt 已修改</span><button class="copy-code-button" type="button" data-clipboard-text="echo &quot;Hello, World!&quot; &gt; newfile.txt  # 修改文件
+git status                          # 查看状态，显示 newfile.txt 已修改" style="display: none;"></button></pre>
+
+<p><strong>已暂存（Staged）</strong>：
+使用 <code>git add</code> 命令将修改过的文件添加到暂存区后，文件进入已暂存状态，等待提交。</p>
+<pre class="prettyprint prettyprinted" style=""><span class="pln">git add newfile</span><span class="pun">.</span><span class="pln">txt  </span><span class="com"># 添加文件到暂存区</span><span class="pln">
+git status           </span><span class="com"># 查看状态，显示 newfile.txt 已暂存</span><button class="copy-code-button" type="button" data-clipboard-text="git add newfile.txt  # 添加文件到暂存区
+git status           # 查看状态，显示 newfile.txt 已暂存" style="display: none;"></button></pre>
+
+<p><strong>已提交（Committed）</strong>：
+使用 <code>git commit</code> 命令将暂存区的更改提交到本地仓库后，这些更改被记录下来，文件状态返回为已跟踪状态。</p>
+<pre class="prettyprint prettyprinted" style=""><span class="pln">git commit </span><span class="pun">-</span><span class="pln">m </span><span class="str">"Added newfile.txt"</span><span class="pln">  </span><span class="com"># 提交更改</span><span class="pln">
+git status                         </span><span class="com"># 查看状态，工作目录干净</span><button class="copy-code-button" type="button" data-clipboard-text="git commit -m &quot;Added newfile.txt&quot;  # 提交更改
+git status                         # 查看状态，工作目录干净"></button></pre>
+			<!-- 其他扩展 -->
+						
+			</div>
